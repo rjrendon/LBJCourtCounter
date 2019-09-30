@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:src="@drawable/lbj"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:textColor="#FF3D00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Basketball ScoreBoard App"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<TextView
+    android:textColor="@color/colorAccent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Team A"
+    android:textStyle="bold"
+    android:textSize="25sp"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="55dp"
+    />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/score_a"
+            android:text="00"
+            android:textSize="85sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp" />
+        <Button
+            android:id="@+id/increment_three_a"
+            android:onClick="threePointsa"
+            android:text="+3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="55dp"
+            />
+        <Button
+            android:id="@+id/increment_two_a"
+            android:onClick="twoPointsa"
+            android:text="+2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"/>
+
+        <Button
+            android:id="@+id/increment_one_a"
+            android:onClick="onePointa"
+            android:text="+1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="55dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/score_b"
+            android:text="00"
+            android:textSize="85sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="55dp" />
+        <Button
+            android:id="@+id/increment_three"
+            android:onClick="threePointsb"
+            android:text="+3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="55dp"
+            />
+        <Button
+            android:id="@+id/increment_two"
+            android:onClick="twoPointsb"
+            android:text="+2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="55dp"/>
+
+        <Button
+            android:id="@+id/increment_one"
+            android:onClick="onePointb"
+            android:text="+1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="55dp"/>
+
+
+    </LinearLayout>
+
+<Button
+    android:onClick="resetButton"
+    android:text="RESET"
+    android:layout_width="68dp"
+    android:layout_height="35dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>
